@@ -1,0 +1,57 @@
+.programPage__container {
+  display: flex;
+  flex-direction: row;
+  margin: 1% 1% 0 2%;
+  min-height: 75vh;
+  justify-content: center;
+}
+
+.heading {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  svg {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+}
+
+.slider_size {
+  display: flex;
+  justify-content: center;
+
+  div:first-child {
+    width: 840px !important;
+    height: 450px !important;
+    transition: width 0.3s ease-in-out;
+  }  
+}
+
+@media (max-width: 1400px) {
+  .slider_size div:first-child {
+    width: 560px !important;
+    height: 380px !important;
+  }
+}
+
+@media (max-width: 810) {
+  .slider_size div:first-child {
+    width: 610px !important;
+    height: 300px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .slider_size div:first-child {
+    width: 480px !important;
+    height: 270px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .slider_size div:first-child {
+    width: 320px !important;
+    height: 180px !important;
+  }
+}

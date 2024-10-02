@@ -1,0 +1,123 @@
+.header_container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+}
+
+.panel {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 230px;
+    height: 100%;
+    background-color: white;
+    z-index: 1000;
+    padding: 30% 1%;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-out;
+}
+
+.panel.open {
+    transform: translateX(0);
+}
+
+.close {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.3s;
+}
+
+.close:hover {
+    width: 35px;
+    height: 35px;
+    transition: 0.3s;
+}
+
+.line {
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: black;
+}
+
+.line1 {
+    transform: rotate(45deg);
+}
+
+.line2 {
+    transform: rotate(-45deg);
+}
+
+
+.header {
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    font-family: "Montserrat Alternates";
+    align-items: center;
+    gap: 1%;
+    border-bottom: 1px solid #14246a;
+    width: 95%;
+    justify-content: space-between; // Добавьте это свойство
+}
+
+
+.header__text {
+    width: 150px;
+    color: #5A7CF1;
+}
+
+.burger {
+    display: none;
+    justify-content: flex-end;
+    padding-right: 10px;
+    align-items: center;
+}
+
+.panel {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 230px;
+    height: 100%;
+    background-color: white;
+    z-index: 1000;
+    padding: 30% 1%;
+}
+
+.close {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+@media (max-width: 870px) {
+    .burger {
+        display: flex;
+    }
+
+    .leftPanel {
+        display: none;
+    }
+
+    .panel .leftPanel {
+        display: block;
+
+        & .header__logotip {
+            display: none;
+        }
+    }
+
+    .burger-menu {
+        display: block;
+    }
+}
+
+@media (min-width: 871px) {
+    .panel {
+        display: none;
+    }
+}

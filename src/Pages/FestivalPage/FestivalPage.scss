@@ -1,0 +1,85 @@
+.festivalPage {
+    font-family: "Montserrat Alternates";
+}
+
+.festivalPage__container {
+    display: flex;
+    flex-direction: row;
+    margin: 1% 1% 0 2%;
+    justify-content: center
+}
+
+.festivalPage__informationBlock {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+    align-items: center;
+}
+
+.festivalPage__informationBlock__img__festival {
+    width: 900px;
+    padding: 2% 0;
+}
+
+.folderButtons {
+    justify-content: center;
+    gap: 1%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .button_comp {
+        margin: 10px;
+    }
+}
+
+.folderButtonDiv {
+    width: 290px;
+}
+
+ul {
+    padding-left: 0;
+}
+
+li {
+    color: #5A7CF1;
+    font-weight: 500;
+    list-style-type: none;
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+
+.festivalPage__informationBlock__img__festival {
+    transition: width 0.3s ease-in-out;
+}
+
+@media (max-width: 1405px) {
+
+    .festivalPage__informationBlock__img__festival {
+        width: 510px;
+    }
+}
+
+@media (max-width: 870px) {
+
+    .festivalPage__informationBlock__img__festival {
+        width: 610px;
+    }
+}
+
+@media (max-width: 620px) {
+    .festivalPage__informationBlock__img__festival {
+        width: 420px;
+    }
+}
+
+@media (max-width: 430px) {
+
+    .festivalPage__informationBlock__img__festival {
+        width: 310px;
+    }
+}

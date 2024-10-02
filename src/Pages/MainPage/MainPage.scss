@@ -1,0 +1,79 @@
+.mainPage {
+    font-family: "Montserrat Alternates";
+}
+
+.mainPage__container {
+    display: flex;
+    flex-direction: row;
+    margin: 1% 1% 0 2%;
+    min-height: 75vh;
+}
+
+.mainPage__informationBlock {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainPage__informationBlock__name {
+    font-size: 5vh;
+    font-weight: bolder;
+}
+
+.mainPage__informationBlock__scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 550px;
+    overflow: auto;
+
+    img {
+        padding: 5px 0 5px 0;
+        width: 60%;
+    }
+
+}
+
+.historicalText {
+    text-align: justify;
+    padding-right: 15px;
+}
+
+@media (max-width: 1405px) {
+
+    .mainPage__informationBlock__img__history {
+        width: 510px;
+    }
+}
+
+
+@media (max-width: 870px) {
+
+    .mainPage__informationBlock {
+        width: 100%;
+    }
+
+    .mainPage__informationBlock__img__history {
+        width: 610px;
+    }
+}
+
+@media (max-width: 620px) {
+    .mainPage__informationBlock__img__history {
+        width: 420px;
+    }
+}
+
+@media (max-width: 430px) {
+
+    .mainPage__informationBlock__img__history {
+        width: 310px;
+    }
+}
+
+
+.mainPage__informationBlock__img__history {
+    transition: width 0.3s ease-in-out;
+}

@@ -1,0 +1,53 @@
+.button_comp__button {
+    width: 100%;
+    height: 80px;
+    border-radius: 10%;
+    border: none;
+    max-width: 350px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    transition: 1s;
+    color: rgb(42, 42, 149);
+}
+
+.button_comp__button:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.button_comp__button.active {
+    background-color: #5A7CF1;
+    color: azure;
+    transition: 0.3s;
+}
+
+.leftPanel__buttonContainer__button {
+    font-family: "Montserrat Alternates";
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.folderButtonComp {
+    height: 60px;
+    font-family: "Montserrat Alternates";
+    font-size: 3.7vw;
+    font-weight: bolder;
+    max-width: 290px;
+}
+
+@media (max-width: 1100px) {
+    .leftPanel__buttonContainer__button {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 87px) {
+    .leftPanel__buttonContainer__button {
+        font-size: 28px;
+    }
+
+    .button_comp__button {
+        width: 200px;
+        height: 50px;
+    }
+}
